@@ -1,0 +1,290 @@
+/*******************
+ 01 TYPOGRAPHY START
+********************/
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #36100C;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #E74C3C;
+}
+a:hover {
+  color: #E74C3C;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+ol, ul, dl {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  color: #A6B4C8;
+  font-weight: 400;
+}
+
+.space-py-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.space-pt-60 {
+  padding-top: 60px;
+}
+
+.space-pb-60 {
+  padding-bottom: 60px;
+}
+
+/***********************
+ 14 DOCUMANTATION START
+************************/
+.dock-header {
+  background-color: #E74C3C;
+  padding: 25px 0;
+  z-index: 2;
+  position: relative;
+}
+.dock-header .header-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dock-header .header-contain ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dock-header .header-contain ul li a {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.dock-header .header-contain ul li + li {
+  margin-left: 25px;
+}
+.dock-header .header-contain .menu-action i {
+  font-size: 24px;
+  color: #ffffff;
+}
+.dock-header .header-contain .btn {
+  color: #E74C3C;
+  font-weight: 500;
+  padding: 10px 30px;
+  background-color: #ffffff;
+}
+.dock-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.custom-container {
+  width: calc(100% - 320px);
+  margin-left: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.cdx-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 3;
+  -webkit-box-shadow: 0 0 20px 0 rgba(54, 16, 12, 0.1);
+          box-shadow: 0 0 20px 0 rgba(54, 16, 12, 0.1);
+}
+.cdx-sidebar .codex-brand {
+  padding: 23px 30px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.cdx-sidebar .codex-brand img {
+  width: 210px;
+  height: auto;
+}
+.cdx-sidebar .menu-list {
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.cdx-sidebar .menu-list li {
+  text-transform: capitalize;
+}
+.cdx-sidebar .menu-list li a {
+  color: #E74C3C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 5px;
+}
+.cdx-sidebar .menu-list li a.active {
+  background-color: #E74C3C;
+  color: #ffffff;
+}
+.cdx-sidebar .menu-list li + li {
+  margin-top: 10px;
+}
+
+.dock-body .telink {
+  color: #E74C3C !important;
+  font-weight: 500;
+}
+.dock-body .dock-title {
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #36100C;
+  color: #ffffff;
+}
+.dock-body .dock-title h4 {
+  font-size: 20px;
+}
+.dock-body .featuer-list {
+  padding-left: 20px;
+}
+.dock-body .featuer-list li {
+  list-style: square;
+  font-size: 16px;
+  color: #A6B4C8;
+  text-transform: capitalize;
+}
+.dock-body .featuer-list li a {
+  color: #A6B4C8;
+}
+.dock-body .featuer-list li + li {
+  margin-top: 10px;
+}
+.dock-body .folder-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dock-body .folder-list li a i {
+  color: #E74C3C;
+  margin-right: 10px;
+  min-width: 20px;
+}
+.dock-body .folder-list li ul {
+  margin-left: 25px;
+}
+.dock-body .folder-list li ul li a {
+  font-size: 18px;
+}
+.dock-body .wtree {
+  position: relative;
+}
+.dock-body .wtree li {
+  position: relative;
+  list-style-type: none;
+  margin: 10px 0 10px 10px;
+}
+.dock-body .wtree li:before {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  border-left: 1px solid #A6B4C8;
+  border-bottom: 1px solid #A6B4C8;
+  width: 15px;
+  height: 15px;
+}
+.dock-body .wtree li:after {
+  position: absolute;
+  content: " ";
+  top: 14px;
+  left: -25px;
+  border-left: 1px solid #A6B4C8;
+  width: 15px;
+  height: 100%;
+}
+.dock-body .wtree li:last-child:after {
+  display: none;
+}
+.dock-body .card {
+  border: none;
+  background-color: transparent;
+}
+.dock-body .card .card-body {
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid #E5E5E5;
+}
+
+@media screen and (max-width: 991px) {
+  .cdx-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 16, 12, 0.8);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .cdx-layer.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .dock-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dock-header .header-contain .btn {
+    margin-right: 20px;
+    padding: 8px 20px;
+  }
+  .cdx-sidebar {
+    inset-inline-start: -320px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .cdx-sidebar.active {
+    inset-inline-start: 0;
+  }
+  .custom-container {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
